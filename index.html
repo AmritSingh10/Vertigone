@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Vertigone</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <style>
+    /* Keep your hero full-width from our last update */
+    .hero {
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+      background: url('images/background.jpeg') no-repeat center/cover;
+      background-size: cover;
+      padding: 6rem 1rem;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      border-radius: 0 0 8px 8px;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      border-radius: 0 0 8px 8px;
+      z-index: -1;
+    }
+    .hero h2, .hero p, .hero .cta-btn {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-title"><h1>Vertigone</h1></div>
+    <nav class="main-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="features.html">Features</a>
+      <a href="research.html">Research</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://secure.vestibular.org/forms/donate" class="donate-btn">Donate</a>
+    </nav>
+  </header>
+
+  <!-- Hero (full-width) -->
+  <section class="hero">
+    <h2>Vertigone – Balance Reimagined</h2>
+    <p>Vertigone builds intelligent assistive devices to help individuals manage vertigo and balance-related disorders through innovation and care.</p>
+    <a href="about.html"><button class="cta-btn">Meet Our Team</button></a>
+  </section>
+
+  <main class="container">
+
+    <!-- About Vertigone (moved down) -->
+    <section style="margin-top:4rem;">
+      <h3>About Vertigone</h3>
+      <div class="info-grid">
+        <div class="info-card">
+          <h4>Medical Devices</h4>
+          <p>Wearables for real-time gait correction &amp; fall detection.</p>
+        </div>
+        <div class="info-card">
+          <h4>AI &amp; Motion Analysis</h4>
+          <p>Algorithms to track and improve balance over time.</p>
+        </div>
+        <div class="info-card">
+          <h4>Clinical Research</h4>
+          <p>Trials and studies to support evidence-based care.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Teams -->
+    <section style="margin-top:4rem;">
+      <h3>Our Teams</h3>
+      <div class="team-section">
+        <div class="team-card">
+          <img src="images/engineering-icon.png" alt="Engineering"/>
+          <h4>Engineering</h4>
+          <p>Designs and prototypes wearable hardware: sensors, circuits, and haptic feedback.</p>
+        </div>
+        <div class="team-card">
+          <img src="images/software-icon.png" alt="Software"/>
+          <h4>Software</h4>
+          <p>Builds real-time monitoring apps, balance-analysis algorithms, and user interfaces.</p>
+        </div>
+        <div class="team-card">
+          <img src="images/research-icon.png" alt="Clinical Research"/>
+          <h4>Clinical Research</h4>
+          <p>Runs trials, gathers data, and ensures devices meet regulatory standards.</p>
+        </div>
+        <div class="team-card">
+          <img src="images/outreach-icon.png" alt="Outreach"/>
+          <h4>Outreach</h4>
+          <p>Manages partnerships, communications, and fundraising to scale our reach.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    Vertigone. All rights reserved. | contact@vertigone.com
+  </footer>
+
+</body>
+</html>
